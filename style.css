@@ -338,17 +338,21 @@ table tr, table th{
 
 .Excluir{
     background-color: rgb(221, 80, 80);
+    color: #fff;
     border-radius: 3px;
     padding: 3px 3px;
     cursor: pointer;
+    border: none;
 }
 
 .Editar{
-    background-color: rgb(58, 71, 184);
+    background-color: rgb(91, 104, 221);
+    color: #fff;
     border-radius: 3px;
     padding: 3px 3px;
     cursor: pointer;
     margin-right: 4px;
+    border: none;
 }
 
 #dropdownMenuButton{
