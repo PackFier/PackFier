@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>PackFier | Cadastro de fornecedor</title>
+</head>
+<body>
+    <div class="wrapper">
+        <nav class="nav">
+            <div class="nav-logo">
+                <p>PackFier</p>
+            </div>
+            <div class="nav-menu">
+                <ul>
+                    <li><a href="index.html" class="link ">Página inicial</a></li>
+                    <li><a href="#" class="link ">Lista de Fornecedores</a></li>
+                    <li><a href="Login_Fornecedor.html" class="link active">Area do fornecedor</a></li>
+                </ul>
+            </div>
+            <div class="nav-botao">
+                <button class="btn white-btn" id="login-btn" onclick="login()">Entrar</button>
+                <button class="btn white-btn" id="registro-btn" onclick="register()">Registrar</button>
+            </div>
+        </nav>
+            <!-----------------------CAIXA CADASTRO DE FORNECEDOR-------------------------->
+        
+            <div class="form-box">
+
+        
+    
+                <div class="cadastroF-container" id="Cadastro">
+                    <div class="top">
+                        <span>Possui uma conta? <a href="Login_Fornecedor.html" onclick="login()">login</a></span>
+                        <header>Cadastro Fornecedor</header>
+                    </div>
+                    <div class="input-box">
+                        <input type="text" class="input-field" placeholder="Nome do Fornecedor">
+                        <i class="bx bx-user"></i>
+                    </div>
+                    <div class="input-box">
+                        <input type="text" class="input-field" placeholder="CNPJ">
+                        <i class="bx bx-home"></i>
+                    </div>
+                    <div class="input-box">
+                        <input type="password" class="input-field" placeholder="Digite sua senha">
+                        <i class="bx bx-lock-alt"></i>
+                    </div>
+                    <div class="input-box">
+                        <input type="password" class="input-field" placeholder="Confirmar senha">
+                        <i class="bx bx-lock-alt"></i>
+                    </div>
+                    <div class="input-box">
+                        <input type="submit" class="submit" value="Fazer Cadastro">
+                    </div>
+                </div>
+                
+               
+            </div>
+            <!-----------------------FORMULARIO DE CADASTRO DE FORNECEDOR-------------------------->
+            
+    </div>     
+</body>
+</html>

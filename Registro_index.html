@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>PackFier | Registro & Home</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <nav class="nav">
+            <div class="nav-logo">
+                <p>PackFier</p>
+            </div>
+            <div class="nav-menu">
+                <ul>
+                    <li><a href="index.html" class="link active">Login Usuario</a></li>
+                    <li><a href="Login_Fornecedor.html" class="link ">Area do Fornecedor</a></li>
+                </ul>
+            </div>
+            <div class="nav-botao">
+                <button class="btn white-btn" id="login-btn" onclick="login()">Entrar</button>
+                <button class="btn white-btn" id="registro-btn" onclick="register()">Registrar</button>
+            </div>
+            <div class="nav-menu-btn">
+                <i class="bx bx-menu" onclick="myMenuFunction()"></i>
+            </div>
+        </nav>
+
+        <!----------------------Caixa de formulario------------------------>
+
+        <div class="form-box">
+            <!--------------Formulario de registro--------------->
+
+            <div class="registro-container" id="registro">
+                <div class="top">
+                    <span>Já possui uma conta? <a href="index.html" onclick="login()">Login</a></span>
+                    <header>Registrar-se</header>
+                </div>
+                <div class="two-forms">
+                    <div class="input-box">
+                        <input type="text" class="input-field" placeholder="Nome">
+                        <i class="bx bx-user"></i>
+                    </div>
+                    <div class="input-box">
+                        <input type="text" class="input-field" placeholder="Sobrenome">
+                        <i class="bx bx-user"></i>
+                    </div>
+                </div>
+                <div class="input-box">
+                    <input type="text" class="input-field" placeholder="Email">
+                    <i class="bx bx-envelope"></i>
+                </div>
+                <div class="input-box">
+                    <input type="password" class="input-field" placeholder="Senha">
+                    <i class="bx bx-lock-alt"></i>
+                </div>
+                <div class="input-box">
+                    <input type="submit" class="submit" value="Registrar-se">
+                </div>
+                <div class="two-col">
+                    <div class="one">
+                        <input type="checkbox" id="registro-check">
+                        <label for="registro-check"> Lembrar de mim</label>
+                    </div>
+                    <div class="two">
+                        <label><a href="#">Termos e condições</a></label>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+<!--------------Formulario de registro--------------->
+
+<div class="registro-container" id="registro">
+    <div class="top">
+        <span>Já possui uma conta? <a href="#" onclick="login()">Login</a></span>
+        <header>Registrar-se</header>
+    </div>
+    <div class="two-forms">
+        <div class="input-box">
+            <input type="text" class="input-field" placeholder="Nome">
+            <i class="bx bx-user"></i>
+        </div>
+        <div class="input-box">
+            <input type="text" class="input-field" placeholder="Sobrenome">
+            <i class="bx bx-user"></i>
+        </div>
+    </div>
+    <div class="input-box">
+        <input type="text" class="input-field" placeholder="Email">
+        <i class="bx bx-envelope"></i>
+    </div>
+    <div class="input-box">
+        <input type="password" class="input-field" placeholder="Senha">
+        <i class="bx bx-lock-alt"></i>
+    </div>
+    <div class="input-box">
+        <input type="submit" class="submit" value="Registrar-se">
+    </div>
+    <div class="two-col">
+        <div class="one">
+            <input type="checkbox" id="registro-check">
+            <label for="registro-check"> Lembrar de mim</label>
+        </div>
+        <div class="two">
+            <label><a href="#">Termos e condições</a></label>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>PackFier | Rastreio de Pacote</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <nav class="nav">
+            <div class="nav-logo">
+                <p>PackFier</p>
+            </div>
+            <div class="nav-menu">
+                <ul>
+                    <li><a href="Pos_login.html" class="link ">Página inicial</a></li>
+                    <li><a href="Login_Fornecedor.html" class="link ">Area do Fornecedor</a></li>
+                </ul>
+            </div>
+            
+        </nav>
+            <div class="form-box">
+
+                <!--------------Rastreio--------------->
+                
+                <div class="Rastreio-container" id="Rastreio">
+                    <div class="top">
+                        <header>Rastreio de pacote</header>
+                    </div>
+    
+                    <div class="input-box">
+                        <input type="text" class="input-field" id="Label-rast" placeholder="Insira o link de Rastreio">
+                    </div> <br>
+
+                    <div class="input-box">
+                        <input type="submit" class="submit" id="btn-rast"  value="Rastrear pacote">
+                    </div>
+                    <br>
+                    <div class="table" id="lista_rastreio" hidden>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>id</th>
+                                    <th>Status</th>
+                                    <th>Tipo de pacote</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>A caminho - 26/04/2024<br> Aduaneiro </td>
+                                    <td>Caixa Frágil</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>A caminho - 26/04/2024 <br> Porto de santos </td>
+                                    <td>Caixa Frágil</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>A caminho - 26/04/2024<br> Porto de santos </td>
+                                    <td>Carta</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+    </div>
+    
+    <script>
+        var meuText = document.getElementById("lista_rastreio");
+        var MeuButao = document.getElementById("btn-rast");
+        var minhaLabel = document.getElementById("Label-rast");
+
+        minhaLabel.onclick = () => {
+            if(meuText.attributes.getNamedItem("hidden") == null){
+                meuText.setAttribute("hidden", "true");
+            }
+        }
+        MeuButao.onclick = () => {
+            if(meuText.attributes.getNamedItem("hidden")){
+                meuText.removeAttribute("hidden")
+            } 
+        }          
+    </script>
+
+</body>
+
+</html>
