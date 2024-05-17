@@ -18,7 +18,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
-    <title>PackFier | Pos Pacotes Enviados</title>
+    <title>PackFier | Editar Perfil</title>
 </head>
 
 
@@ -61,42 +61,34 @@
 
                     </div>
         </nav>
-       <div class="ListaRegistros">
-            <header>Produtos Cadastrados</header>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Código</th>
-                        <th>Nome</th>
-                        <th></th>
-                        <th></th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>Lapis</td>
-                        <td><button class="Excluir">Excluir</button></td>
-                        <td><button class="Editar">Editar</button></td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>Cadeira</td>
-                        <td><button class="Excluir">Excluir</button></td>
-                        <td><button class="Editar">Editar</button></td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>Caneta</td>
-                        <td><button class="Excluir">Excluir</button></td>
-                        <td><button class="Editar">Editar</button></td>
-                    </tr>
-                </tbody>
-            </table>
-        
-       </div>
+        <div class="formulario_cad" id="cadastro-produto">
+            <header>Editar Perfil</header>
 
+            <div class="input-box">
+            </div>
+            <div class="input-box">
+                <label for="" class="label1">Nome da Empresa:</label>
+                <input type="text" class="input-field" id="input-field" placeholder="EmpresaX">
+                <br><br>
+                <label for="" class="label1">Telefone:</label>
+                <input type="tel" class="input-field" id="mini-input" placeholder="(16) 99698-7766">
+                <br><br>
+                <label for="" class="label1">Email:</label>
+                <input type="text" class="input-field" id="input-field" placeholder="EmpresaX@yahoo.com">
+            </div>
+            <br>
+            <label for="Descrição"></label>
 
+            <textarea id="story" name="Descrição" rows="5" cols="60">
+Resumo de Perfil....
+            </textarea>
+            <br>
+            <div class="input-button">
+
+                <input type="submit" class="submit" id="btn_2" value="Salvar">
+
+            </div>
+        </div>
 
 
 
